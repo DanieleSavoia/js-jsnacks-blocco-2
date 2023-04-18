@@ -1,20 +1,24 @@
-let ListaNome = ["Daniele" , "Francesco" , "Michele" , "Teodoro"]
+let ListaNome = ["Daniele" , "Francesco" , "Michele" , "Teodoro" , "Pippo" , "Filippo"]
 
-let ListaCognomi = ["Savoia" , "Sandrini" , "Rossi" , "Balotelli"]
+let ListaCognomi = ["Savoia" , "Sandrini" , "Rossi" , "Balotelli" , "Poli" , "Gagliardini"]
 console.log(ListaNome)
 console.log(ListaCognomi)
-document.getElementById("name").innerHTML = nome;
-document.getElementById("surname").innerHTML = cognome;
+
 
 
 
 const btnOne = document.getElementById("btn-uno")
 
 btnOne.addEventListener ("click" , function() {
-    function rand_array(ListaNome);
-        
     
+let randomNum = Math.floor(Math.random()*ListaNome.length);
 
+document.getElementById("name").innerHTML= (ListaNome[randomNum]);
+
+let randomCog = Math.floor(Math.random()*ListaCognomi.length);
+
+document.getElementById("surname").innerHTML= (ListaCognomi[randomCog]);
+    
 })
 
 
